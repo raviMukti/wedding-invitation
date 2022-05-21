@@ -1,0 +1,16 @@
+{
+    "name": "ravimukti/wedding-invitation",
+    "description": "Just Simple HTML Page",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "raviMukti",
+            "email": "shinjiravi@gmail.com"
+        }
+    ],
+    "require": {},
+    "scripts": {
+        "start" : "php -S localhost:8080 -f index.php"
+    }
+}

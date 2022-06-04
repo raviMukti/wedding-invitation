@@ -61,10 +61,3 @@ $(document).ready(function ($)
   $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
 });
-$(window).load(function ()
-{
-  var Body = $("body");
-  Body.addClass("preloader-site");
-  var audio = document.getElementById("myAudio");
-  audio.play();
-});

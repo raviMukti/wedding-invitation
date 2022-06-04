@@ -51,8 +51,8 @@ html {
 
 
 .hero {
-  background-image: url(https://picsum.photos/id/1050/1400/900);
-  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("https://picsum.photos/id/1050/1400/900") no-repeat;
+  background-image: url(../image/main-banner.jpg);
+  background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/main-banner.jpg") no-repeat;
   background-attachment: fixed;
   background-size: cover;
   color: white;
@@ -60,18 +60,26 @@ html {
   font-family: 'Raleway', sans-serif;
 }
 
-
+@font-face {
+  font-family: alexBrush;
+  src: url(../font/AlexBrush-Regular.ttf);
+}
 
 .hero .title {
-  font-family: 'Alex Brush', cursive;
+  font-family: alexBrush;
   font-weight: 700;
   font-size: 5rem;
   padding-bottom: 5px;
   color: whitesmoke;
 }
 
+@font-face {
+  font-family: aleGreya;
+  src: url(../font/Alegreya-Regular.otf);
+}
+
 .hero .subtitle {
-  font-family: 'Alegreya', serif;
+  font-family: aleGreya;
   padding: 30px;
   color: whitesmoke;
   font-size: 2.5rem;
@@ -80,7 +88,6 @@ html {
 .hero .tempatwaktu {
   padding-top: 35px;
   font-size: 2rem;
-  
 }
 
 .hero .hero-foot {
@@ -311,7 +318,7 @@ html {
 }
 
 .nama-lengkap {
-  font-family: 'Rouge Script', sans-serif;
+  font-family: alexBrush;
   color: #996E6D;
   font-size: 3.5rem;
   letter-spacing: 0px;
@@ -321,7 +328,7 @@ html {
 
 .ampersand {
 font-size: 5rem;
-font-family: 'Rouge Script', sans-serif;
+font-family: alexBrush;
 color: #996E6D;
 line-height: 5rem;
 display: inline-block;
@@ -538,10 +545,10 @@ body.preloader-site {
 .dusty-pink-darkest {color: #996E6D}
 
 .section-light {
-  background-image: url(../image/divider-flowers-leaves.png);
+  background-image: url(../image/wedding-flower.png);
   background-position: bottom 40px center;
   background-repeat: no-repeat;
-  background-size: 30%;
+  background-size: 55%;
 }
 
 .instagram {
@@ -553,4 +560,11 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+
+.wedding-flower {
+  background-image: url(../image/wedding-flower.png);
+  background-position: bottom 40px center;
+  background-repeat: no-repeat;
+  background-size: 55%;
 }

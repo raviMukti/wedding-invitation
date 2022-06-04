@@ -54,6 +54,7 @@ html {
   background-image: url(../image/main-banner.jpg);
   background: linear-gradient(rgba(153, 110, 109, 0.65), rgba(153, 110, 109, 0.65)), rgba(0, 0, 0, 0.55) url("../image/main-banner.jpg") no-repeat;
   background-attachment: fixed;
+  background-position: center center;
   background-size: cover;
   color: white;
   box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -468,6 +469,7 @@ body.preloader-site {
 }
 
 .preloader-wrapper .preloader {
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -567,4 +569,10 @@ body.preloader-site {
   background-position: bottom 40px center;
   background-repeat: no-repeat;
   background-size: 55%;
+}
+
+.kalimat-pembuka {
+  font-family: aleGreya;
+  color: whitesmoke;
+  font-size: 1.5rem;
 }

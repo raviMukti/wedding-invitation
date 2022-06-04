@@ -55,9 +55,36 @@ function scrollFunction()
   }
 }
 
+const divPembuka = document.getElementById("divPembuka");
+const btn = document.getElementById("openInvitation");
+btn.onclick = function () {
+  if(divPembuka.style.display !== "none")
+  {
+    fadeOutEffect();
+    document.getElementById("playAudio").play();
+  }
+  else
+  {
+    divPembuka.style.display = "block"
+  }
+}
+
+function fadeOutEffect() {
+  var fadeTarget = document.getElementById("divPembuka");
+  var fadeEffect = setInterval(function () {
+      if (!fadeTarget.style.opacity) {
+          fadeTarget.style.opacity = 1;
+      }
+      if (fadeTarget.style.opacity > 0) {
+          fadeTarget.style.opacity -= 0.1;
+      } else {
+          clearInterval(fadeEffect);
+      }
+  }, 150);
+}
+
 // Preloader
 $(document).ready(function ($)
 {
-  $(".preloader-wrapper").fadeOut();
   $("body").removeClass("preloader-site");
 });

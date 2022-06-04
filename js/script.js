@@ -51,17 +51,20 @@ function scrollFunction()
     document.getElementById("toTop").style.display = "block";
   } else
   {
+    document.getElementById("divPembuka").style.display = "none";
     document.getElementById("toTop").style.display = "none";
   }
 }
 
 const divPembuka = document.getElementById("divPembuka");
 const btn = document.getElementById("openInvitation");
+const audio = document.getElementById("playAudio");
+
 btn.onclick = function () {
   if(divPembuka.style.display !== "none")
   {
     fadeOutEffect();
-    document.getElementById("playAudio").play();
+    audio.play()
   }
   else
   {
